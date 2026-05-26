@@ -48,3 +48,18 @@ console.log(typeof myObj)
 // stack(Primitive), Heap(Non-Premitive)
 
 let myName="Subhadeep"
+
+let anotherName= myName;
+anotherName="Something else"
+
+console.log(myName)
+console.log(anotherName)
+
+let user1 ={
+    email: "user@google.com",
+    upi:"user@ybl"
+}
+let user2=user1
+
+user2.upi="lenseman@ybl"
+console.table([user1.upi,user2.upi])

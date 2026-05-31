@@ -53,3 +53,5 @@ console.log(users[1].email)
 console.log(Object.keys(appuser))
 console.log(Object.values(appuser))
 console.log(Object.entries(appuser))
+
+console.log(appuser.hasOwnProperty('isLogedIn')) //it cheaks is the object has following properety or not

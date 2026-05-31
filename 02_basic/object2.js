@@ -55,3 +55,40 @@ console.log(Object.values(appuser))
 console.log(Object.entries(appuser))
 
 console.log(appuser.hasOwnProperty('isLogedIn')) //it cheaks is the object has following properety or not
+
+
+//Destructuring
+
+const course ={
+    couse:"DS",
+    price:"399",
+    Instructor:"Mr.Unknown"
+}
+
+//couse.Instructor
+
+const{Instructor}=course
+
+console.log(Instructor)
+
+//to name it differently
+const {Instructor :Teacher}=course  //name Instructor as teacher
+console.log(Teacher)
+
+/*const navbar= ({company}) =>{
+
+ }
+ navbar(company="JS")*/
+
+ //API
+
+ /*{   //json standard format
+    "name":"Subhadeep",
+    "cousename":"JavaScript",
+    "price":null
+ }*/
+
+/*[     //array format of json
+    {},
+    {},
+]*/

@@ -1,2 +1,2 @@
 # javaScript
-This a revision of conding on javascript
+This a revision of coding on javascript

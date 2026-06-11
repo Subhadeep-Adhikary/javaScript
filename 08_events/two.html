@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const say=function(){console.log('javaScript')}
+    setTimeout(function(){
+        console.log("Subhadeep")
+    },2000)
+    setInterval(say,5000)
+   
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="JS files and projects are here"
+    }
+
+    const changeh1=setTimeout(changeText,3000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+       clearTimeout(changeh1)
+       console.log("Stopped")
+    })
+    
+</script>
+</html>
